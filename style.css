@@ -1,0 +1,59 @@
+body {
+  /*Using the Open Sans font from Google fonts as requested :)*/
+  font-family: 'Open Sans', sans-serif;
+  color: #262626;
+}
+
+.intro {
+  background-image: url("images/desert-night.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+hr {
+  border: 1px solid #4fc1b1;
+}
+
+.title {
+  font-size:calc(22px + 5vw);
+  font-weight: 800;
+}
+
+.subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 2em;
+  color: #4fc1b1;
+}
+
+input[type=text]:focus {
+  border: 1px solid #4fc1b1;
+}
+
+/*KAT AND ANDREW Styled the button according to how I saw it on your website :)*/
+.cutebtn {
+  border: 2px solid #4fc1b1;
+  border-radius: 5px;
+}
+
+.cutebtn:hover {
+  color: white;
+  background-color: #4fc1b1;
+}
+
+/*KAT AND ANDREW While looking through your website, I noticed that the stock photos used on your site are edited to fit your branding so I did the same on this photo by adding the logo to the foam on the coffee and the longer OneStaff logo on the booklet :)*/
+.card {
+  background-image: url("images/desk.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  outline: 2px solid white;
+  outline-offset: -24px;
+  color: white;
+}
+
+.stitle {
+  font-size:calc(12px + 5vw);
+  font-weight: 800;
+}
