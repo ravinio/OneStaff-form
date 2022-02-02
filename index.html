@@ -8,7 +8,6 @@
 	<meta name="author" content="Ravin Io">
 	<meta name="description" content="A better solution for our nurses to communicate in order to get their questions and needs met on the go!">
 
-	<!-- KAT AND ANDREW I added the logo on the tab just like the actual website :) -->
 	<link rel="icon" href="images/logo.png">
 
 	<!-- Bootstrap CSS -->
@@ -25,40 +24,6 @@
 </head>
 
 <body data-bs-offset="100">
-
-	<!-- Navigation bar -->
-	<header>
-		<nav class="navbar navbar-expand-lg navbar-light">
-
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#"><img src="images/OstaffTealBlk.png"  width="150" alt="OneStaff logo and name"></a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-          <div class="collapse navbar-collapse" id="navbar1">
-              <ul class="navbar-nav ml-auto text-center text-lg-left">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="success.html">CONTACT</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html">EMPLOYEE INCIDENT REPORT</a>
-                  </li>
-              </ul>
-          </div>
-        </div>
-     </nav>
-  </header>
-
-  <!-- Main body -->
-  
 <main>
 		<section class="intro container-fluid">
       <div class="row justify-content-center text-center">
@@ -69,18 +34,16 @@
       </div>
       <div class="row justify-content-center text-center">
         <div class="col-12 col-lg-5 mb-5 pb-5">
-          <p><b>Instructions:</b> Employees shall use this form to report work-related injuries, illnesses which could have caused an injury or illness – no matter how minor.  Timing:  Employee completes the form during their work-shift (or within 24-hours of incident).</p>
+          <p><b>Instructions:</b> Please use this form to report any work-related incidents which could have caused an injury or illness – no matter how minor. Please fill this out as accuratly and timely as possible. You must complete this form during your work-shift (or within 24-hours of incident).</p>
         </div>
       </div>
 		</section>
 		
-    <!-- KAT AND ANDREW One of the most notable changes I made to the form arrangement is swtiching the No and Yes on the radio questions. Since the Yes options were the only ones that actually needed follow up questions, I put those as the second option in order to have a better flow of the document and kept -->
     <section class="container">
       <form method="POST" action="success.html">	
         <div class="container">
           <div class="row text-center my-5">
-            <div class="col">     
-              <!-- KAT AND ANDREW I took the report out of first person POV sense the rest of the document does not reead this way and I felt like it read better with out it-->
+            <div class="col">
               <label class="subtitle">This report is for a work related:</label><br>	
               <span class="check">
                 <input type="checkbox" id="train" value="Training">
@@ -182,7 +145,6 @@
               </label>
             </span><br>
           </div>
-            <!--KAT and ANDREW added the "if yes" part for the sake of consistantcy like in the other optional yes questions and also to confirm to the user that this part is definitely optional -->
           <div class="col-12 col-md-6">
             <div class="form-floating">      
               <input type="text" class="form-control" id="aname" placeholder="aname"><br>  
@@ -194,7 +156,7 @@
         <div class="row mx-2 mx-md-5">
           <div class="col">
             <div class="form-floating">  	
-              <textarea class="form-control" id="where" placeholder="where"></textarea><br> 
+              <textarea class="form-control" id="where" style="height: 165px" placeholder="where"></textarea><br> 
               <label for="where">Where, exactly did it happen?</label><br>	
             </div>
           </div>
@@ -203,7 +165,7 @@
         <div class="row mx-2 mx-md-5">
           <div class="col">
             <div class="form-floating">
-              <textarea class="form-control" id="what" placeholder="what"></textarea><br> 
+              <textarea class="form-control" id="what" style="height: 165px" placeholder="what"></textarea><br> 
               <label for="what">What were you doing at the time?</label><br>		
             </div>
           </div>
@@ -212,28 +174,29 @@
         <div class="row mx-2 mx-md-5">
           <div class="col">
             <div class="form-floating">
-              <textarea class="form-control" id="what" placeholder="what"></textarea><br> 
-              <label for="what">Describe step by step what led to the incident</label><br>		
+              <textarea class="form-control" id="what" style="height: 165px" placeholder="what"></textarea><br> 
+              <label for="what">Describe step by step what led to the incident.</label><br>		
             </div>
           </div>
         </div>
 
         <div class="row mx-2 mx-md-5">
           <div class="col mb-5">
-            <!-- KAT and ANDREW I gave the nurses the option to attach more files that they might have that apply to the situation or what ever else they would find helpful for their case -->        
             <label for="formFileMultiple" class="form-label">Attach additional files if necessary</label>
             <input class="form-control" type="file" id="formFileMultiple" multiple>
           </div>
         </div>
 
         <div class="row mx-2 mx-md-5">
-          <div class="col-12 col-md-6">
+          <div class="col">
             <div class="form-floating">
-              <textarea class="form-control" id="what" placeholder="what"></textarea><br> 
+              <textarea class="form-control" id="what" style="height: 125px" placeholder="what"></textarea><br> 
               <label for="what">What part(s) of your body were injured?</label><br>		
             </div>
           </div>
-            
+        </div>
+          
+        <div class="row mx-2 mx-md-5">
           <div class="col-12 col-md-6 mb-5">
             <label>Did you get medical treatment?</label><br>		
             <span class="check">
@@ -267,7 +230,6 @@
 
         <div class="row mx-2 mx-md-5">
           <div class="col-12 col-md-6">
-          <!-- KAT and ANDREW I Went ahead and broke this section into two parts because I thought it would look neater on the form and when the information gets back to us as well -->
             <div class="form-floating">
               <input type="text" class="form-control" id="facility" placeholder="facility"><br>        
               <label for="facility">Name of Facility</label><br>
@@ -296,25 +258,32 @@
               </label>
             </span><br>
           </div>
+        </div>
 
-          <div class="col-12 col-md-6">
+        <div class="row mx-2 mx-md-5">
+          <div class="col">
             <div class="form-floating">
-              <textarea class="form-control" id="previnjury" placeholder="previnjury"></textarea><br>
+              <textarea class="form-control" id="previnjury" style="height: 165px" placeholder="previnjury"></textarea><br> 
               <label for="previnjury">If yes, when and what happened?</label><br>		
             </div>
           </div>
         </div>
 
+        <div class="row justify-content-center text-center mx-2 mx-md-5">
+          <div class="col-12">
+             <p>Please sign and date the form when completed.</p>
+          </div>
+        </div>        
+
         <div class="row mx-2 mx-md-5">
           <div class="col-12 col-md-6">
             <div class="form-floating">
               <input type="text" class="form-control" id="signature" placeholder="signature"><br> 
-              <label for="signature">Your Signature:</label><br>
+              <label for="signature">Your e-Signature:</label><br>
             </div>
           </div>
         
           <div class="col-12 col-md-6">
-            <!-- KAT and ANDREW I specified putting todays date at the bottom here just incase there was any confusion by the user, ya never know lol-->
             <div class="form-floating">
               <input type="date" class="form-control" id="date" placeholder="date"><br>  
               <label for="date">Today's Date:</label><br>
@@ -337,8 +306,7 @@
 
   <!-- Importing Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-  <script src="ravenclaw.js"></script>
-
+  
 </body>
 
 </html>
